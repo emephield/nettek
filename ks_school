@@ -1,0 +1,10 @@
+#! /bin/bash
+
+sudo cp /etc/resolv_school /etc/resolv.conf
+
+sudo /etc/netconfig.d/dns-resolver
+sudo /etc/netconfig.d/dns-bind
+sudo /etc/netconfig.d/dns-dnsmasq
+sudo /etc/netconfig.d/nis
+sudo /etc/netconfig.d/ntp-runtime
+sudo dhcpcd -n wlan0
